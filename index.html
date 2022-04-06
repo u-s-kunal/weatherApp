@@ -1,0 +1,35 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
+       <title>Weather App </title>
+   </head>
+   <body>
+       <!-- for weather app  -->
+
+   <section id="weather" class="weather">
+    <h1>Weather App</h1>
+    <div class="card">
+        <div class="search-input"><input type="text" class="search">
+            <input class="search-btn" type="button" value="Search">
+        </div>
+        <div class="info">
+            <h2 id="city"></h2>
+            <h2 id="temp"></h2>
+            <img src="//cdn.weatherapi.com/weather/64x64/day/302.png" class="icon" alt="" srcset="">
+            <div class="info-p">
+                <p class="description"></p>
+                <p class="humidity"></p>
+                <p class="w-speed"></p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<script src="logic.js"></script>
+
+   </body>
+   </html>
