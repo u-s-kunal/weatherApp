@@ -16,7 +16,7 @@ let weather = {
 		const { icon, text } = data.current.condition;
 		const { temp_c, humidity } = data.current;
 		const { wind_kph } = data.current;
-		// console.log(name, icon, text, temp_c, humidity, wind_kph);
+		console.log(name, icon, text, temp_c, humidity, wind_kph);
 		document.getElementById("city").innerHTML = "in  " + name;
 		document.getElementById("temp").innerHTML = temp_c + "°c";
 		document.querySelector(".icon").src = icon;
