@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
 /* for weather App  */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,22 +8,22 @@
 
 
 }
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 
-.weather{
+.weather {
     height: 100vh;
     width: 100vw;
-    background-color: #091261;
+    background-color: #626262;
     background-image: url(weather-back.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.weather h1{
-    font-size: 5vw;
-    color: white;
-}
-h2{
+
+h2 {
     text-align: center;
     color: white;
 }
@@ -30,7 +31,7 @@ h2{
 
 
 
-.card{
+.card {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -40,132 +41,283 @@ h2{
     height: 700px;
     width: 60vw;
     border-radius: 30px;
-    box-shadow: 0px 0px 30px #a02da1, inset  0px 0px 40px rgb(0, 140, 255), #a02da1 0px 0px 30px ,inset  0px 0px 30px white;
+    box-shadow: 0px 0px 10px #ffffff, inset 10px 10px 60px rgba(255, 254, 254, 0.598), #bababa 0px 0px 30px, inset 0px 0px 20px white;
     position: relative;
- }
-
-
- .search-input{
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     width: 50vw;
-     margin-top: -30px;
-     margin-bottom: 30px;
-     
- }
-input:hover{
-     /* border: 2px solid white; */
-     box-shadow: 1px 1px 30px white;
-    color: red;
-
- }
-
-
- .search-input .search{
-     font-size: 1.8vw;
-     width: 100vw;
-     font-weight: bolder;
-     background-color: transparent;
-     color: white;
-     height: 50px;
-     text-align: center;
-     text-transform: capitalize;
-
-
- }
-
- .search-input .search-btn{
-     width: 20vw;
-     text-align: center; 
-     padding: 10px;
-     border: 2px solid white;
-     background-color: transparent;
-     color: white;
-     font-size: 1.2vw;
- }
- .search-btn{
-     margin: 10px;
- }
-
- .search-btn:hover{
-     cursor: pointer;
-     background-color: rgb(172, 5, 5);
-
- }
-
-
- .info{
-     height: 50vh;
-     width: 50vw;
-     display: flex;
-     flex-direction: column;
-     text-align: left;
-     border-radius: 20px;
-
- }
-
- .info h2{
-      text-align: right;
-      font-size: 6vw;
-      font-weight: lighter;
-      margin: 5px;
-      text-transform: capitalize;
- }
-
- .info p{
-     color: white;
-     font-size: 3vw;
-     font-weight: lighter;
-     margin: 20px;
-
-
- }
- .info img{
-   padding: 1px;
-   margin-left: 0px;
-   margin-top: -80px;
-   box-shadow: 0px 0px 30px #a02da1, inset  0px 0px 40px rgb(0, 140, 255), #a02da1 0px 0px 30px ,inset  0px 0px 30px white;
-   border-radius: 50%;
-   transition: 1s ease-in-out;
-
-     
- }
- .info img:hover{
-    transform: scale(1.3,1.3);
 }
 
- .icon{
-     /* position: absolute; */
-     height: 120px;
-     width: 120px;
-     margin-top: -30px;
-     margin: 0px 20px;
+
+.search-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+input {
+    border: 2px solid whitesmoke;
+    font-family: 'Montserrat Alternates', sans-serif;
 
 
- }
+}
 
- .info-p{
-     margin-top: 0px;
- }
+input:hover {
+
+    box-shadow: 1px 1px 30px white;
+    color: red;
+
+}
+
+
+.search-input .search {
+    font-size: 1.8vw;
+    width: 100vw;
+    font-weight: bolder;
+    background-color: transparent;
+    color: white;
+    height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+
+
+}
+
+.search-input .search-btn {
+    width: 20vw;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.search-btn {
+    margin: 10px;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+    background-color: rgb(172, 5, 5);
+
+}
+
+
+.info {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 20px;
+
+}
+
+.info h2 {
+    text-align: right;
+    font-size: 6vw;
+    font-weight: lighter;
+    margin: 5px;
+    text-transform: capitalize;
+}
+
+.info p {
+    color: white;
+    font-size: 3vw;
+    font-weight: lighter;
+    margin: 20px;
+
+
+}
+
+.info img {
+    padding: 1px;
+    margin-left: 0px;
+    margin-top: -80px;
+    box-shadow: 0px 0px 20px #cccccc, #d7d5d7 0px 0px 30px, inset 0px 0px 10px white;
+    border-radius: 50%;
+    transition: 100ms ease-in-out;
+
+
+}
+
+.info img:hover {
+    transform: scale(1.3, 1.3);
+}
+
+.icon {
+    /* position: absolute; */
+    height: 120px;
+    width: 120px;
+    margin-top: -30px;
+    margin: 0px 20px;
+
+
+}
+
+.info-p {
+    margin-top: 0px;
+}
+
+/* customizable snowflake styling */
+.snowflake {
+    color: #fff;
+    font-size: 3em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes snowflakes-shake {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px)
+    }
+
+    50% {
+        transform: translateX(80px)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s
+}
+
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay: 6s, .5s
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s
+}
+
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s
+}
+
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s
+}
 
 
 
- @media screen and (max-width: 600px) {
-  
-    .card{
-    
+
+
+
+@media screen and (max-width: 600px) {
+
+    .card {
+
         padding: 20px;
         height: 500px;
         width: 70vw;
-        
-     }
 
-     .search-input{
-         margin-top: 50px;
-     }
-    
-  }
+    }
 
+    .search-input {
+        margin-top: 50px;
+    }
 
+}
