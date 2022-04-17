@@ -39,7 +39,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 90vmin;
+    height: 90vh;
     width: 60vw;
     border-radius: 30px;
     box-shadow: 0px 0px 10px #ffffff, inset 10px 10px 60px rgba(255, 254, 254, 0.598), #bababa 0px 0px 30px, inset 0px 0px 20px white;
