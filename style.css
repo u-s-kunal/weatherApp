@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
 /* for weather App  */
 * {
@@ -38,7 +39,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 700px;
+    height: 90vmin;
     width: 60vw;
     border-radius: 30px;
     box-shadow: 0px 0px 10px #ffffff, inset 10px 10px 60px rgba(255, 254, 254, 0.598), #bababa 0px 0px 30px, inset 0px 0px 20px white;
@@ -148,11 +149,11 @@ input:hover {
 }
 
 .icon {
-    /* position: absolute; */
-    height: 120px;
-    width: 120px;
-    margin-top: -30px;
-    margin: 0px 20px;
+    margin-left: 20px;
+    height: 9vw;
+    width: 9vw;
+    margin-top: -40px;
+
 
 
 }
@@ -301,17 +302,12 @@ input:hover {
     animation-delay: 3s, 1.5s
 }
 
-
-
-
-
-
 @media screen and (max-width: 600px) {
 
     .card {
 
         padding: 20px;
-        height: 500px;
+        height: 400px;
         width: 70vw;
 
     }
